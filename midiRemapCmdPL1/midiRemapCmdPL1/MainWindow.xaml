@@ -1,0 +1,31 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:midiRemapCmdPL1"
+        xmlns:Properties="clr-namespace:midiRemapCmdPL1.Properties" x:Class="midiRemapCmdPL1.MainWindow"
+        mc:Ignorable="d"
+        Title="midiRemap Behringer CMD PL-1" Height="350" Width="542.647" Closing="Window_Closing">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="239*"/>
+            <ColumnDefinition Width="296*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="inputDisconnectButton" Content="disconnect" HorizontalAlignment="Left" Margin="206.863,37,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1"/>
+        <Button x:Name="inputConnectButton" Content="connect" HorizontalAlignment="Left" Margin="126.863,37,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.492,0.568" Grid.Column="1"/>
+        <ComboBox x:Name="inputComboBox" HorizontalAlignment="Left" Margin="1.863,37,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Button x:Name="button_Copy" Content="disconnect" HorizontalAlignment="Left" Margin="206.863,101,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1"/>
+        <Button x:Name="loopConnectButton" Content="connect" HorizontalAlignment="Left" Margin="126.863,101,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.492,0.568" Grid.Column="1"/>
+        <ComboBox x:Name="loopComboBox" HorizontalAlignment="Left" Margin="1.863,101,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Label x:Name="deviceLabel" Content="MIDI I/O device" HorizontalAlignment="Left" Margin="1.863,6,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="loopLabel" Content="Loopback device" HorizontalAlignment="Left" Margin="1.863,70,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="sendLabel" Content="Send command" HorizontalAlignment="Left" Margin="1.863,182,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Button x:Name="sendButton" Content="send" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="206.863,212,0,0" Grid.Column="1"/>
+        <ComboBox x:Name="sendChannelComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="1.863,213,0,0" Grid.Column="1"/>
+        <TextBox x:Name="sendTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104" Margin="97.863,213,0,0" Grid.Column="1"/>
+        <TextBox x:Name="inputTextBlock" HorizontalAlignment="Left" Height="150" Margin="10,10,0,0" TextWrapping="Wrap" Text="Input" VerticalAlignment="Top" Width="219" VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True" IsReadOnlyCaretVisible="True"/>
+        <TextBox x:Name="outputTextBlock" HorizontalAlignment="Left" Height="144" Margin="10,166,0,0" TextWrapping="Wrap" Text="Output" VerticalAlignment="Top" Width="219"/>
+
+    </Grid>
+</Window>
